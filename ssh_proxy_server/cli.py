@@ -28,7 +28,7 @@ from ssh_proxy_server.forwarders.sftp import (
 )
 
 
-def main():
+def main() -> None:
     parser = ModuleParser(description='SSH Proxy Server', baseclass=BaseForwarder, modules_from_file=True)
 
     parser.add_plugin(LogModule)
